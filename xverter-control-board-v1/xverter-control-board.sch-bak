@@ -1,0 +1,779 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5F4343B1
+P 2600 3050
+F 0 "Q1" H 2790 3096 50  0000 L CNN
+F 1 "2N3904" H 2790 3005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2800 2975 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2600 3050 50  0001 L CNN
+	1    2600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 5F435089
+P 3050 2700
+F 0 "D1" V 3004 2780 50  0000 L CNN
+F 1 "1N4148" V 3095 2780 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3050 2525 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3050 2700 50  0001 C CNN
+	1    3050 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:2N3905 Q3
+U 1 1 5F43665D
+P 5250 1150
+F 0 "Q3" H 5440 1104 50  0000 L CNN
+F 1 "2N3905" H 5440 1195 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5450 1075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3905.pdf" H 5250 1150 50  0001 L CNN
+	1    5250 1150
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F445D81
+P 2700 3500
+F 0 "#PWR0101" H 2700 3250 50  0001 C CNN
+F 1 "GND" H 2705 3327 50  0000 C CNN
+F 2 "" H 2700 3500 50  0001 C CNN
+F 3 "" H 2700 3500 50  0001 C CNN
+	1    2700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3250 2700 3500
+$Comp
+L Device:R R1
+U 1 1 5F4477C6
+P 2000 3050
+F 0 "R1" V 1793 3050 50  0000 C CNN
+F 1 "R" V 1884 3050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 1930 3050 50  0001 C CNN
+F 3 "~" H 2000 3050 50  0001 C CNN
+	1    2000 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 3050 2250 3050
+$Comp
+L power:GND #PWR0102
+U 1 1 5F44E6EE
+P 1150 1600
+F 0 "#PWR0102" H 1150 1350 50  0001 C CNN
+F 1 "GND" H 1155 1427 50  0000 C CNN
+F 2 "" H 1150 1600 50  0001 C CNN
+F 3 "" H 1150 1600 50  0001 C CNN
+	1    1150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1450 1150 1600
+Text GLabel 1450 3050 0    50   Input ~ 0
+XVERTER_ON
+Wire Wire Line
+	1850 3050 1450 3050
+$Comp
+L Device:R R2
+U 1 1 5F461F66
+P 2250 3300
+F 0 "R2" H 2320 3346 50  0000 L CNN
+F 1 "R" H 2320 3255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2180 3300 50  0001 C CNN
+F 3 "~" H 2250 3300 50  0001 C CNN
+	1    2250 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2250 3050
+Wire Wire Line
+	2250 3050 2150 3050
+Wire Wire Line
+	2250 3050 2250 3150
+Text GLabel 1150 1150 2    50   Input ~ 0
+XVERTER_ON
+$Comp
+L Device:R R3
+U 1 1 5F46682B
+P 4650 1150
+F 0 "R3" V 4443 1150 50  0000 C CNN
+F 1 "R" V 4534 1150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4580 1150 50  0001 C CNN
+F 3 "~" H 4650 1150 50  0001 C CNN
+	1    4650 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F46BCB0
+P 4900 1000
+F 0 "R4" H 4970 1046 50  0000 L CNN
+F 1 "R" H 4970 955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 4830 1000 50  0001 C CNN
+F 3 "~" H 4900 1000 50  0001 C CNN
+	1    4900 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1150 4900 1150
+Connection ~ 4900 1150
+Wire Wire Line
+	4900 1150 5050 1150
+Text GLabel 4300 1150 0    50   Input ~ 0
+RIG_XVERTER_PTT_IN
+Text GLabel 5350 1550 3    50   Input ~ 0
+PTT_XVERTER
+Wire Wire Line
+	5350 1350 5350 1550
+Text GLabel 1250 4300 2    50   Input ~ 0
+RIG_XVERTER_ALC_INPUT
+$Comp
+L Connector:Conn_01x08_Male J1
+U 1 1 5F476F5F
+P 900 4100
+F 0 "J1" H 1008 4581 50  0000 C CNN
+F 1 "Rig Transverter Connector" H 1008 4490 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal" H 900 4100 50  0001 C CNN
+F 3 "~" H 900 4100 50  0001 C CNN
+	1    900  4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 4400 2    50   Input ~ 0
+RIG_XVERTER_TX_OUT
+Text GLabel 1250 4500 2    50   Input ~ 0
+RIG_XVERTER_HF_RX_ANT_OUT
+Text GLabel 1250 4200 2    50   Input ~ 0
+RIG_XVERTER_RX_INPUT
+Text GLabel 1250 4100 2    50   Input ~ 0
+RIG_XVERTER_TX_PA_DISABLE
+$Comp
+L power:GND #PWR0103
+U 1 1 5F482ECD
+P 1250 4000
+F 0 "#PWR0103" H 1250 3750 50  0001 C CNN
+F 1 "GND" V 1255 3872 50  0000 R CNN
+F 2 "" H 1250 4000 50  0001 C CNN
+F 3 "" H 1250 4000 50  0001 C CNN
+	1    1250 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F483CFF
+P 1250 3800
+F 0 "#PWR0104" H 1250 3550 50  0001 C CNN
+F 1 "GND" V 1255 3672 50  0000 R CNN
+F 2 "" H 1250 3800 50  0001 C CNN
+F 3 "" H 1250 3800 50  0001 C CNN
+	1    1250 3800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1250 3900 2    50   Input ~ 0
+RIG_XVERTER_PTT_IN
+Wire Wire Line
+	1100 3800 1250 3800
+Wire Wire Line
+	1100 3900 1250 3900
+Wire Wire Line
+	1100 4000 1250 4000
+Wire Wire Line
+	1100 4100 1250 4100
+Wire Wire Line
+	1100 4200 1250 4200
+Wire Wire Line
+	1100 4300 1250 4300
+Wire Wire Line
+	1100 4400 1250 4400
+Wire Wire Line
+	1100 4500 1250 4500
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5F48B77F
+P 5700 3550
+F 0 "J4" H 5672 3432 50  0000 R CNN
+F 1 "Transverter 2" H 5672 3523 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 5700 3550 50  0001 C CNN
+F 3 "~" H 5700 3550 50  0001 C CNN
+	1    5700 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J6
+U 1 1 5F48C52F
+P 950 1250
+F 0 "J6" H 1058 1531 50  0000 C CNN
+F 1 "Power" H 1058 1440 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 950 1250 50  0001 C CNN
+F 3 "~" H 950 1250 50  0001 C CNN
+	1    950  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J5
+U 1 1 5F489A4B
+P 5700 2900
+F 0 "J5" H 5672 2782 50  0000 R CNN
+F 1 "Transverter 1" H 5672 2873 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 5700 2900 50  0001 C CNN
+F 3 "~" H 5700 2900 50  0001 C CNN
+	1    5700 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0105
+U 1 1 5F4B4EE6
+P 1150 1350
+F 0 "#PWR0105" H 1150 1200 50  0001 C CNN
+F 1 "+12V" V 1165 1478 50  0000 L CNN
+F 2 "" H 1150 1350 50  0001 C CNN
+F 3 "" H 1150 1350 50  0001 C CNN
+	1    1150 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0106
+U 1 1 5F4B5485
+P 3450 2550
+F 0 "#PWR0106" H 3450 2400 50  0001 C CNN
+F 1 "+12V" H 3465 2723 50  0000 C CNN
+F 2 "" H 3450 2550 50  0001 C CNN
+F 3 "" H 3450 2550 50  0001 C CNN
+	1    3450 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0107
+U 1 1 5F4B5B3A
+P 4900 850
+F 0 "#PWR0107" H 4900 700 50  0001 C CNN
+F 1 "+12V" H 4915 1023 50  0000 C CNN
+F 2 "" H 4900 850 50  0001 C CNN
+F 3 "" H 4900 850 50  0001 C CNN
+	1    4900 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0108
+U 1 1 5F4B715E
+P 5350 950
+F 0 "#PWR0108" H 5350 800 50  0001 C CNN
+F 1 "+12V" H 5365 1123 50  0000 C CNN
+F 2 "" H 5350 950 50  0001 C CNN
+F 3 "" H 5350 950 50  0001 C CNN
+	1    5350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0109
+U 1 1 5F4B88E5
+P 5500 3650
+F 0 "#PWR0109" H 5500 3500 50  0001 C CNN
+F 1 "+12V" V 5515 3778 50  0000 L CNN
+F 2 "" H 5500 3650 50  0001 C CNN
+F 3 "" H 5500 3650 50  0001 C CNN
+	1    5500 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F4CCE93
+P 5500 3550
+F 0 "#PWR0110" H 5500 3300 50  0001 C CNN
+F 1 "GND" V 5505 3422 50  0000 R CNN
+F 2 "" H 5500 3550 50  0001 C CNN
+F 3 "" H 5500 3550 50  0001 C CNN
+	1    5500 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5F4CD3BF
+P 5500 3350
+F 0 "#PWR0111" H 5500 3100 50  0001 C CNN
+F 1 "GND" V 5505 3222 50  0000 R CNN
+F 2 "" H 5500 3350 50  0001 C CNN
+F 3 "" H 5500 3350 50  0001 C CNN
+	1    5500 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5F4CD943
+P 5500 2900
+F 0 "#PWR0112" H 5500 2650 50  0001 C CNN
+F 1 "GND" V 5505 2772 50  0000 R CNN
+F 2 "" H 5500 2900 50  0001 C CNN
+F 3 "" H 5500 2900 50  0001 C CNN
+	1    5500 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5F4CE109
+P 5700 4100
+F 0 "J3" H 5672 3982 50  0000 R CNN
+F 1 "RF" H 5672 4073 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5700 4100 50  0001 C CNN
+F 3 "~" H 5700 4100 50  0001 C CNN
+	1    5700 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5F4CEE1C
+P 5500 4100
+F 0 "#PWR0113" H 5500 3850 50  0001 C CNN
+F 1 "GND" V 5505 3972 50  0000 R CNN
+F 2 "" H 5500 4100 50  0001 C CNN
+F 3 "" H 5500 4100 50  0001 C CNN
+	1    5500 4100
+	0    1    1    0   
+$EndComp
+Text GLabel 5500 4000 0    50   Input ~ 0
+RF_INOUT
+Text GLabel 5500 3450 0    50   Input ~ 0
+RF_INOUT
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5F4CFD88
+P 5700 4450
+F 0 "J2" H 5672 4332 50  0000 R CNN
+F 1 "ALC" H 5672 4423 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5700 4450 50  0001 C CNN
+F 3 "~" H 5700 4450 50  0001 C CNN
+	1    5700 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5F4DEFCD
+P 5500 4450
+F 0 "#PWR0114" H 5500 4200 50  0001 C CNN
+F 1 "GND" V 5505 4322 50  0000 R CNN
+F 2 "" H 5500 4450 50  0001 C CNN
+F 3 "" H 5500 4450 50  0001 C CNN
+	1    5500 4450
+	0    1    1    0   
+$EndComp
+Text GLabel 5500 4350 0    50   Input ~ 0
+RIG_XVERTER_ALC_INPUT
+Text GLabel 5500 2800 0    50   Input ~ 0
+PTT_XVERTER
+Text GLabel 5500 3000 0    50   Input ~ 0
+RIG_XVERTER_TX_OUT
+Text GLabel 5500 2700 0    50   Input ~ 0
+XVERTER_RX_INPUT
+$Comp
+L power:GND #PWR0115
+U 1 1 5F4638F0
+P 2250 3500
+F 0 "#PWR0115" H 2250 3250 50  0001 C CNN
+F 1 "GND" H 2255 3327 50  0000 C CNN
+F 2 "" H 2250 3500 50  0001 C CNN
+F 3 "" H 2250 3500 50  0001 C CNN
+	1    2250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3450 2250 3500
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 5F4F1A54
+P 4050 4250
+F 0 "Q2" H 4240 4296 50  0000 L CNN
+F 1 "2N3904" H 4240 4205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 4175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4050 4250 50  0001 L CNN
+	1    4050 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 4050 1    50   Input ~ 0
+RIG_XVERTER_TX_PA_DISABLE
+$Comp
+L power:GND #PWR0116
+U 1 1 5F4F319F
+P 4150 4450
+F 0 "#PWR0116" H 4150 4200 50  0001 C CNN
+F 1 "GND" H 4155 4277 50  0000 C CNN
+F 2 "" H 4150 4450 50  0001 C CNN
+F 3 "" H 4150 4450 50  0001 C CNN
+	1    4150 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5F500276
+P 3600 4250
+F 0 "R5" V 3393 4250 50  0000 C CNN
+F 1 "R" V 3484 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 3530 4250 50  0001 C CNN
+F 3 "~" H 3600 4250 50  0001 C CNN
+	1    3600 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5F50076A
+P 3800 4400
+F 0 "R6" H 3870 4446 50  0000 L CNN
+F 1 "R" H 3870 4355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 3730 4400 50  0001 C CNN
+F 3 "~" H 3800 4400 50  0001 C CNN
+	1    3800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4250 3800 4250
+Wire Wire Line
+	3850 4250 3800 4250
+Connection ~ 3800 4250
+$Comp
+L power:GND #PWR0117
+U 1 1 5F506CC5
+P 3800 4550
+F 0 "#PWR0117" H 3800 4300 50  0001 C CNN
+F 1 "GND" H 3805 4377 50  0000 C CNN
+F 2 "" H 3800 4550 50  0001 C CNN
+F 3 "" H 3800 4550 50  0001 C CNN
+	1    3800 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3450 4250 0    50   Input ~ 0
+XVERTER_ON
+Wire Wire Line
+	4500 1150 4300 1150
+$Comp
+L Device:C C2
+U 1 1 5F4DA233
+P 1400 5450
+F 0 "C2" H 1515 5496 50  0000 L CNN
+F 1 "0.1uF" H 1515 5405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 1438 5300 50  0001 C CNN
+F 3 "~" H 1400 5450 50  0001 C CNN
+	1    1400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F4DD276
+P 2050 6050
+F 0 "C3" H 2165 6096 50  0000 L CNN
+F 1 "0.1uF" H 2165 6005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2088 5900 50  0001 C CNN
+F 3 "~" H 2050 6050 50  0001 C CNN
+	1    2050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5F4DDCD1
+P 2500 6050
+F 0 "C4" H 2615 6096 50  0000 L CNN
+F 1 "0.1uF" H 2615 6005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2538 5900 50  0001 C CNN
+F 3 "~" H 2500 6050 50  0001 C CNN
+	1    2500 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5F4DE42E
+P 1400 5600
+F 0 "#PWR0118" H 1400 5350 50  0001 C CNN
+F 1 "GND" H 1405 5427 50  0000 C CNN
+F 2 "" H 1400 5600 50  0001 C CNN
+F 3 "" H 1400 5600 50  0001 C CNN
+	1    1400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5F4DEA9E
+P 2050 6200
+F 0 "#PWR0119" H 2050 5950 50  0001 C CNN
+F 1 "GND" H 2055 6027 50  0000 C CNN
+F 2 "" H 2050 6200 50  0001 C CNN
+F 3 "" H 2050 6200 50  0001 C CNN
+	1    2050 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5F4DF09C
+P 2500 6200
+F 0 "#PWR0120" H 2500 5950 50  0001 C CNN
+F 1 "GND" H 2505 6027 50  0000 C CNN
+F 2 "" H 2500 6200 50  0001 C CNN
+F 3 "" H 2500 6200 50  0001 C CNN
+	1    2500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5F4E3989
+P 1000 5450
+F 0 "C1" H 1115 5496 50  0000 L CNN
+F 1 "10uF" H 1115 5405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1000 5450 50  0001 C CNN
+F 3 "~" H 1000 5450 50  0001 C CNN
+	1    1000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5F4EC643
+P 1000 5600
+F 0 "#PWR0121" H 1000 5350 50  0001 C CNN
+F 1 "GND" H 1005 5427 50  0000 C CNN
+F 2 "" H 1000 5600 50  0001 C CNN
+F 3 "" H 1000 5600 50  0001 C CNN
+	1    1000 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0122
+U 1 1 5F4EE371
+P 1000 5300
+F 0 "#PWR0122" H 1000 5150 50  0001 C CNN
+F 1 "+12V" H 1015 5473 50  0000 C CNN
+F 2 "" H 1000 5300 50  0001 C CNN
+F 3 "" H 1000 5300 50  0001 C CNN
+	1    1000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0123
+U 1 1 5F4EE954
+P 1400 5300
+F 0 "#PWR0123" H 1400 5150 50  0001 C CNN
+F 1 "+12V" H 1415 5473 50  0000 C CNN
+F 2 "" H 1400 5300 50  0001 C CNN
+F 3 "" H 1400 5300 50  0001 C CNN
+	1    1400 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2050 5900 1    50   Input ~ 0
+RIG_XVERTER_PTT_IN
+Text GLabel 2500 5900 1    50   Input ~ 0
+RIG_XVERTER_ALC_INPUT
+$Comp
+L Device:C C5
+U 1 1 5F52E584
+P 3000 6050
+F 0 "C5" H 3115 6096 50  0000 L CNN
+F 1 "0.1uF" H 3115 6005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 3038 5900 50  0001 C CNN
+F 3 "~" H 3000 6050 50  0001 C CNN
+	1    3000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5F5349E4
+P 3000 6200
+F 0 "#PWR0124" H 3000 5950 50  0001 C CNN
+F 1 "GND" H 3005 6027 50  0000 C CNN
+F 2 "" H 3000 6200 50  0001 C CNN
+F 3 "" H 3000 6200 50  0001 C CNN
+	1    3000 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 5900 1    50   Input ~ 0
+PTT_XVERTER
+$Comp
+L Device:C C6
+U 1 1 5F54E1C0
+P 3550 6050
+F 0 "C6" H 3665 6096 50  0000 L CNN
+F 1 "0.1uF" H 3665 6005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 3588 5900 50  0001 C CNN
+F 3 "~" H 3550 6050 50  0001 C CNN
+	1    3550 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5F54F63C
+P 3550 6200
+F 0 "#PWR0125" H 3550 5950 50  0001 C CNN
+F 1 "GND" H 3555 6027 50  0000 C CNN
+F 2 "" H 3550 6200 50  0001 C CNN
+F 3 "" H 3550 6200 50  0001 C CNN
+	1    3550 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 5900 1    50   Input ~ 0
+XVERTER_ON
+$Comp
+L Device:C C7
+U 1 1 5F5501B7
+P 4050 6050
+F 0 "C7" H 4165 6096 50  0000 L CNN
+F 1 "0.1uF" H 4165 6005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 4088 5900 50  0001 C CNN
+F 3 "~" H 4050 6050 50  0001 C CNN
+	1    4050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5F550959
+P 4050 6200
+F 0 "#PWR0126" H 4050 5950 50  0001 C CNN
+F 1 "GND" H 4055 6027 50  0000 C CNN
+F 2 "" H 4050 6200 50  0001 C CNN
+F 3 "" H 4050 6200 50  0001 C CNN
+	1    4050 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4050 5900 1    50   Input ~ 0
+RIG_XVERTER_TX_PA_DISABLE
+$Comp
+L Device:C C9
+U 1 1 5F593DA9
+P 5350 5500
+F 0 "C9" H 5465 5546 50  0000 L CNN
+F 1 "0.1uF" H 5465 5455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 5388 5350 50  0001 C CNN
+F 3 "~" H 5350 5500 50  0001 C CNN
+	1    5350 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5F593DAF
+P 5350 5650
+F 0 "#PWR0127" H 5350 5400 50  0001 C CNN
+F 1 "GND" H 5355 5477 50  0000 C CNN
+F 2 "" H 5350 5650 50  0001 C CNN
+F 3 "" H 5350 5650 50  0001 C CNN
+	1    5350 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C8
+U 1 1 5F593DB5
+P 4950 5500
+F 0 "C8" H 5065 5546 50  0000 L CNN
+F 1 "10uF" H 5065 5455 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4950 5500 50  0001 C CNN
+F 3 "~" H 4950 5500 50  0001 C CNN
+	1    4950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5F593DBB
+P 4950 5650
+F 0 "#PWR0128" H 4950 5400 50  0001 C CNN
+F 1 "GND" H 4955 5477 50  0000 C CNN
+F 2 "" H 4950 5650 50  0001 C CNN
+F 3 "" H 4950 5650 50  0001 C CNN
+	1    4950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0129
+U 1 1 5F593DC1
+P 4950 5350
+F 0 "#PWR0129" H 4950 5200 50  0001 C CNN
+F 1 "+12V" H 4965 5523 50  0000 C CNN
+F 2 "" H 4950 5350 50  0001 C CNN
+F 3 "" H 4950 5350 50  0001 C CNN
+	1    4950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0130
+U 1 1 5F593DC7
+P 5350 5350
+F 0 "#PWR0130" H 5350 5200 50  0001 C CNN
+F 1 "+12V" H 5365 5523 50  0000 C CNN
+F 2 "" H 5350 5350 50  0001 C CNN
+F 3 "" H 5350 5350 50  0001 C CNN
+	1    5350 5350
+	1    0    0    -1  
+$EndComp
+Text Notes 4850 5050 0    50   ~ 0
+Locate near the transverter connector\n
+Text Notes 800  5000 0    50   ~ 0
+Locate near the power input\n
+Text Notes 2450 6600 0    50   ~ 0
+Locate near connector signals\n
+$Comp
+L DS1E:DS1E-M-DC12V K1
+U 1 1 5F4D0634
+P 2600 2350
+F 0 "K1" V 2954 2526 50  0000 L CNN
+F 1 "DS1E-M-DC12V" V 3045 2526 50  0000 L CNN
+F 2 "Package_DIP:DIP-12_W7.62mm_LongPads" H 2600 2850 50  0001 L CNN
+F 3 "https://www.panasonic-electric-works.com/cps/rde/xbcr/pew_eu_en/ds_61005_en_ds_pd_old2010.pdf" H 2600 2950 50  0001 L CNN
+F 4 "+70°C" H 2600 3050 50  0001 L CNN "ambient temperature range high"
+F 5 "-40°C" H 2600 3150 50  0001 L CNN "ambient temperature range low"
+F 6 "Relay" H 2600 3250 50  0001 L CNN "category"
+F 7 "33.3mA" H 2600 3350 50  0001 L CNN "coil current"
+F 8 "400mW" H 2600 3450 50  0001 L CNN "coil power"
+F 9 "360Ω" H 2600 3550 50  0001 L CNN "coil resistance"
+F 10 "Non-Latching" H 2600 3650 50  0001 L CNN "coil type"
+F 11 "3A" H 2600 3750 50  0001 L CNN "current rating"
+F 12 "Electromechanical" H 2600 3850 50  0001 L CNN "device class L1"
+F 13 "Relays" H 2600 3950 50  0001 L CNN "device class L2"
+F 14 "Signal Relays" H 2600 4050 50  0001 L CNN "device class L3"
+F 15 "RELAY GEN PURPOSE SPDT 2A 250V" H 2600 4150 50  0001 L CNN "digikey description"
+F 16 "255-1473-ND" H 2600 4250 50  0001 L CNN "digikey part number"
+F 17 "10.2mm" H 2600 4350 50  0001 L CNN "height"
+F 18 "yes" H 2600 4450 50  0001 L CNN "lead free"
+F 19 "9a47d73ead8e66f8" H 2600 4550 50  0001 L CNN "library id"
+F 20 "Panasonic" H 2600 4650 50  0001 L CNN "manufacturer"
+F 21 "Low Signal Relays - PCB 2A 12VDC SPDT NON-LATCHING" H 2600 4750 50  0001 L CNN "mouser description"
+F 22 "769-DS1E-M-DC12V" H 2600 4850 50  0001 L CNN "mouser part number"
+F 23 "1" H 2600 4950 50  0001 L CNN "number of contacts"
+F 24 "PTH_RELAY_20MM0_9MM9" H 2600 5050 50  0001 L CNN "package"
+F 25 "yes" H 2600 5150 50  0001 L CNN "rohs"
+F 26 "0.3mm" H 2600 5250 50  0001 L CNN "standoff height"
+F 27 "2A" H 2600 5350 50  0001 L CNN "switching current"
+F 28 "60W" H 2600 5450 50  0001 L CNN "switching power"
+F 29 "SPDT" H 2600 5550 50  0001 L CNN "throw configuration"
+F 30 "250V" H 2600 5650 50  0001 L CNN "voltage rating AC"
+F 31 "220V" H 2600 5750 50  0001 L CNN "voltage rating DC"
+	1    2600 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 2350 2    50   Input ~ 0
+XVERTER_RX_INPUT
+Text GLabel 3300 2250 2    50   Input ~ 0
+RIG_XVERTER_HF_RX_ANT_OUT
+Text GLabel 2700 2350 0    50   Input ~ 0
+RIG_XVERTER_RX_INPUT
+Wire Wire Line
+	3300 2550 3400 2550
+Wire Wire Line
+	3200 2700 3400 2700
+Wire Wire Line
+	3400 2700 3400 2550
+Connection ~ 3400 2550
+Wire Wire Line
+	3400 2550 3450 2550
+Wire Wire Line
+	2700 2850 2700 2700
+Wire Wire Line
+	2900 2700 2700 2700
+Connection ~ 2700 2700
+Wire Wire Line
+	2700 2700 2700 2550
+$EndSCHEMATC

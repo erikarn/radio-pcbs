@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name DS1E)(type Legacy)(uri ${KIPRJMOD}/components/ds1e/eec.lib)(options "")(descr ""))
+)
