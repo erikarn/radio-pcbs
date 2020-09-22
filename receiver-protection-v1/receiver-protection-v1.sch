@@ -1,0 +1,378 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D2
+U 1 1 5F695B5A
+P 3750 2750
+F 0 "D2" V 3796 2670 50  0000 R CNN
+F 1 "1N4148" V 3705 2670 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3750 2750 50  0001 C CNN
+F 3 "~" H 3750 2750 50  0001 C CNN
+	1    3750 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5F696198
+P 4250 2750
+F 0 "D3" V 4204 2830 50  0000 L CNN
+F 1 "1N4148" V 4295 2830 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4250 2750 50  0001 C CNN
+F 3 "~" H 4250 2750 50  0001 C CNN
+	1    4250 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5F696B92
+P 3050 2750
+F 0 "D1" V 3096 2670 50  0000 R CNN
+F 1 "Surge" V 3005 2670 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal" H 3050 2750 50  0001 C CNN
+F 3 "~" H 3050 2750 50  0001 C CNN
+	1    3050 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5F69780C
+P 4950 2600
+F 0 "J2" H 5050 2575 50  0000 L CNN
+F 1 "OUTPUT" H 5050 2484 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 4950 2600 50  0001 C CNN
+F 3 " ~" H 4950 2600 50  0001 C CNN
+	1    4950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5F6973F5
+P 850 2600
+F 0 "J1" H 950 2482 50  0000 L CNN
+F 1 "INPUT" H 950 2573 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 850 2600 50  0001 C CNN
+F 3 " ~" H 850 2600 50  0001 C CNN
+	1    850  2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L eec:DS1E-M-DC12V K1
+U 1 1 5F6A06CE
+P 1400 2600
+F 0 "K1" H 1800 2914 50  0000 C CNN
+F 1 "DS1E-M-DC12V" H 1800 2823 50  0000 C CNN
+F 2 "Package_DIP:DIP-12_W7.62mm_Socket" H 1400 3100 50  0001 L CNN
+F 3 "https://www.panasonic-electric-works.com/cps/rde/xbcr/pew_eu_en/ds_61005_en_ds_pd_old2010.pdf" H 1400 3200 50  0001 L CNN
+F 4 "+70°C" H 1400 3300 50  0001 L CNN "ambient temperature range high"
+F 5 "-40°C" H 1400 3400 50  0001 L CNN "ambient temperature range low"
+F 6 "Relay" H 1400 3500 50  0001 L CNN "category"
+F 7 "33.3mA" H 1400 3600 50  0001 L CNN "coil current"
+F 8 "400mW" H 1400 3700 50  0001 L CNN "coil power"
+F 9 "360Ω" H 1400 3800 50  0001 L CNN "coil resistance"
+F 10 "Non-Latching" H 1400 3900 50  0001 L CNN "coil type"
+F 11 "3A" H 1400 4000 50  0001 L CNN "current rating"
+F 12 "Electromechanical" H 1400 4100 50  0001 L CNN "device class L1"
+F 13 "Relays" H 1400 4200 50  0001 L CNN "device class L2"
+F 14 "Signal Relays" H 1400 4300 50  0001 L CNN "device class L3"
+F 15 "RELAY GEN PURPOSE SPDT 2A 250V" H 1400 4400 50  0001 L CNN "digikey description"
+F 16 "255-1473-ND" H 1400 4500 50  0001 L CNN "digikey part number"
+F 17 "10.2mm" H 1400 4600 50  0001 L CNN "height"
+F 18 "yes" H 1400 4700 50  0001 L CNN "lead free"
+F 19 "9a47d73ead8e66f8" H 1400 4800 50  0001 L CNN "library id"
+F 20 "Panasonic" H 1400 4900 50  0001 L CNN "manufacturer"
+F 21 "Low Signal Relays - PCB 2A 12VDC SPDT NON-LATCHING" H 1400 5000 50  0001 L CNN "mouser description"
+F 22 "769-DS1E-M-DC12V" H 1400 5100 50  0001 L CNN "mouser part number"
+F 23 "1" H 1400 5200 50  0001 L CNN "number of contacts"
+F 24 "PTH_RELAY_20MM0_9MM9" H 1400 5300 50  0001 L CNN "package"
+F 25 "yes" H 1400 5400 50  0001 L CNN "rohs"
+F 26 "0.3mm" H 1400 5500 50  0001 L CNN "standoff height"
+F 27 "2A" H 1400 5600 50  0001 L CNN "switching current"
+F 28 "60W" H 1400 5700 50  0001 L CNN "switching power"
+F 29 "SPDT" H 1400 5800 50  0001 L CNN "throw configuration"
+F 30 "250V" H 1400 5900 50  0001 L CNN "voltage rating AC"
+F 31 "220V" H 1400 6000 50  0001 L CNN "voltage rating DC"
+	1    1400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F6A7332
+P 850 2800
+F 0 "#PWR0101" H 850 2550 50  0001 C CNN
+F 1 "GND" H 855 2627 50  0000 C CNN
+F 2 "" H 850 2800 50  0001 C CNN
+F 3 "" H 850 2800 50  0001 C CNN
+	1    850  2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F6A81C5
+P 3050 2900
+F 0 "#PWR0102" H 3050 2650 50  0001 C CNN
+F 1 "GND" H 3055 2727 50  0000 C CNN
+F 2 "" H 3050 2900 50  0001 C CNN
+F 3 "" H 3050 2900 50  0001 C CNN
+	1    3050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F6A86C7
+P 3750 2900
+F 0 "#PWR0103" H 3750 2650 50  0001 C CNN
+F 1 "GND" H 3755 2727 50  0000 C CNN
+F 2 "" H 3750 2900 50  0001 C CNN
+F 3 "" H 3750 2900 50  0001 C CNN
+	1    3750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F6A8AAA
+P 4250 2900
+F 0 "#PWR0104" H 4250 2650 50  0001 C CNN
+F 1 "GND" H 4255 2727 50  0000 C CNN
+F 2 "" H 4250 2900 50  0001 C CNN
+F 3 "" H 4250 2900 50  0001 C CNN
+	1    4250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5F6A8F0C
+P 4950 2800
+F 0 "#PWR0105" H 4950 2550 50  0001 C CNN
+F 1 "GND" H 4955 2627 50  0000 C CNN
+F 2 "" H 4950 2800 50  0001 C CNN
+F 3 "" H 4950 2800 50  0001 C CNN
+	1    4950 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2600 4250 2600
+Wire Wire Line
+	3750 2600 4250 2600
+Connection ~ 4250 2600
+Wire Wire Line
+	3750 2600 3050 2600
+Connection ~ 3750 2600
+Wire Wire Line
+	3050 2600 2100 2600
+Connection ~ 3050 2600
+$Comp
+L power:GND #PWR0106
+U 1 1 5F6AB4A7
+P 2100 2500
+F 0 "#PWR0106" H 2100 2250 50  0001 C CNN
+F 1 "GND" V 2105 2372 50  0000 R CNN
+F 2 "" H 2100 2500 50  0001 C CNN
+F 3 "" H 2100 2500 50  0001 C CNN
+	1    2100 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5F6ABD62
+P 2000 3350
+F 0 "Q1" H 2190 3396 50  0000 L CNN
+F 1 "2N3904" H 2190 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2200 3275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2000 3350 50  0001 L CNN
+	1    2000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0107
+U 1 1 5F6ACD90
+P 1500 3100
+F 0 "#PWR0107" H 1500 2950 50  0001 C CNN
+F 1 "+12V" V 1515 3228 50  0000 L CNN
+F 2 "" H 1500 3100 50  0001 C CNN
+F 3 "" H 1500 3100 50  0001 C CNN
+	1    1500 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5F6B6A8A
+P 1800 2950
+F 0 "D4" H 1800 3167 50  0000 C CNN
+F 1 "1N4001" H 1800 3076 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal" H 1800 2950 50  0001 C CNN
+F 3 "~" H 1800 2950 50  0001 C CNN
+	1    1800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2800 2100 2950
+Wire Wire Line
+	1950 2950 2100 2950
+Connection ~ 2100 2950
+Wire Wire Line
+	2100 2950 2100 3150
+Wire Wire Line
+	1500 2800 1500 2950
+Wire Wire Line
+	1650 2950 1500 2950
+Connection ~ 1500 2950
+Wire Wire Line
+	1500 2950 1500 3100
+$Comp
+L Device:R R1
+U 1 1 5F6BB8EF
+P 1650 3350
+F 0 "R1" V 1443 3350 50  0000 C CNN
+F 1 "2.2K" V 1534 3350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1580 3350 50  0001 C CNN
+F 3 "~" H 1650 3350 50  0001 C CNN
+	1    1650 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F6BEF09
+P 1150 3500
+F 0 "C1" H 1265 3546 50  0000 L CNN
+F 1 "0.1uF" H 1265 3455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 1188 3350 50  0001 C CNN
+F 3 "~" H 1150 3500 50  0001 C CNN
+	1    1150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F6BE9DB
+P 1400 3500
+F 0 "R2" H 1470 3546 50  0000 L CNN
+F 1 "10K" H 1470 3455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1330 3500 50  0001 C CNN
+F 3 "~" H 1400 3500 50  0001 C CNN
+	1    1400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F6C7C03
+P 2100 3550
+F 0 "#PWR0108" H 2100 3300 50  0001 C CNN
+F 1 "GND" H 2105 3377 50  0000 C CNN
+F 2 "" H 2100 3550 50  0001 C CNN
+F 3 "" H 2100 3550 50  0001 C CNN
+	1    2100 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 3350 0    50   Input ~ 0
+RX_ON_IN
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5F6C893D
+P 1000 1750
+F 0 "J3" H 1108 2031 50  0000 C CNN
+F 1 "POWER/CTRL" H 1108 1940 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1000 1750 50  0001 C CNN
+F 3 "~" H 1000 1750 50  0001 C CNN
+	1    1000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0109
+U 1 1 5F6CA432
+P 1550 1650
+F 0 "#PWR0109" H 1550 1500 50  0001 C CNN
+F 1 "+12V" H 1565 1823 50  0000 C CNN
+F 2 "" H 1550 1650 50  0001 C CNN
+F 3 "" H 1550 1650 50  0001 C CNN
+	1    1550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F6CB253
+P 1550 1850
+F 0 "#PWR0110" H 1550 1600 50  0001 C CNN
+F 1 "GND" H 1555 1677 50  0000 C CNN
+F 2 "" H 1550 1850 50  0001 C CNN
+F 3 "" H 1550 1850 50  0001 C CNN
+	1    1550 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1550 1750 2    50   Input ~ 0
+RX_ON_IN
+Wire Wire Line
+	1200 1750 1550 1750
+Wire Wire Line
+	1200 1650 1550 1650
+Wire Wire Line
+	1200 1850 1550 1850
+Wire Wire Line
+	1500 3350 1400 3350
+Wire Wire Line
+	1150 3350 1400 3350
+Connection ~ 1400 3350
+$Comp
+L power:GND #PWR0111
+U 1 1 5F6EF070
+P 1150 3650
+F 0 "#PWR0111" H 1150 3400 50  0001 C CNN
+F 1 "GND" H 1155 3477 50  0000 C CNN
+F 2 "" H 1150 3650 50  0001 C CNN
+F 3 "" H 1150 3650 50  0001 C CNN
+	1    1150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5F6EF4F0
+P 1400 3650
+F 0 "#PWR0112" H 1400 3400 50  0001 C CNN
+F 1 "GND" H 1405 3477 50  0000 C CNN
+F 2 "" H 1400 3650 50  0001 C CNN
+F 3 "" H 1400 3650 50  0001 C CNN
+	1    1400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3350 1150 3350
+Connection ~ 1150 3350
+$Comp
+L Device:D D5
+U 1 1 5F7017DC
+P 1100 2750
+F 0 "D5" V 1146 2670 50  0000 R CNN
+F 1 "Surge" V 1055 2670 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal" H 1100 2750 50  0001 C CNN
+F 3 "~" H 1100 2750 50  0001 C CNN
+	1    1100 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5F7017E2
+P 1100 2900
+F 0 "#PWR0113" H 1100 2650 50  0001 C CNN
+F 1 "GND" H 1105 2727 50  0000 C CNN
+F 2 "" H 1100 2900 50  0001 C CNN
+F 3 "" H 1100 2900 50  0001 C CNN
+	1    1100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2600 1100 2600
+Connection ~ 1100 2600
+Wire Wire Line
+	1100 2600 1500 2600
+$EndSCHEMATC
