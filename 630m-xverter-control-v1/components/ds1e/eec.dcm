@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DS1E-M-DC12V
+D DS1E-M-DC12V
+F https://www.panasonic-electric-works.com/cps/rde/xbcr/pew_eu_en/ds_61005_en_ds_pd_old2010.pdf
+$ENDCMP
+# end doc library

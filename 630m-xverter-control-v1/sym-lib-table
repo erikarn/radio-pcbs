@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name eec)(type Legacy)(uri ${KIPRJMOD}/components/ds1e/eec.lib)(options "")(descr ""))
+  (lib (name coilcraft)(type Legacy)(uri /home/adrian/git/github/erikarn/radio-pcbs/components/coilcraft/coilcraft.lib)(options "")(descr ""))
+)

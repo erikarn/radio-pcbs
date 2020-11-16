@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name coilcraft)(type KiCad)(uri /home/adrian/git/github/erikarn/radio-pcbs/components/coilcraft/coilcraft.pretty)(options "")(descr ""))
+)
