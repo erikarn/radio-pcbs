@@ -1361,4 +1361,14 @@ F 3 "" H 9850 1150 50  0001 C CNN
 	1    9850 1150
 	1    0    0    -1  
 $EndComp
+Text GLabel 8100 3050 0    50   Input ~ 0
+XVERTER_TX_OUTPUT
+Text GLabel 8100 3200 0    50   Input ~ 0
+TX_TO_AMP
+Wire Wire Line
+	8100 3050 8200 3050
+Wire Wire Line
+	8200 3050 8200 3200
+Wire Wire Line
+	8200 3200 8100 3200
 $EndSCHEMATC
