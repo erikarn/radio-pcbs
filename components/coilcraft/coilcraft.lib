@@ -213,8 +213,8 @@ ENDDEF
 # coilcraft_slot10
 #
 DEF coilcraft_slot10 L 0 40 Y Y 1 F N
-F0 "L" 0 250 50 H V C CNN
-F1 "coilcraft_slot10" 0 150 50 H V C CNN
+F0 "L" 0 400 50 H V C CNN
+F1 "coilcraft_slot10" 0 300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -231,6 +231,8 @@ X 3 3 -250 -300 100 R 50 50 1 1 I
 X 4 4 250 -300 100 L 50 50 1 1 I
 X 5 5 250 -150 100 L 50 50 1 1 I
 X 6 6 250 0 100 L 50 50 1 1 I
+X 7 7 -50 -400 100 U 50 50 1 1 w
+X 8 8 50 -400 100 U 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
