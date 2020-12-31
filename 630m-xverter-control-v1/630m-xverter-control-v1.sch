@@ -942,17 +942,6 @@ F 3 "~" H 8900 3500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C4
-U 1 1 5FCC0258
-P 8900 3750
-F 0 "C4" V 8671 3750 50  0000 C CNN
-F 1 "0.1uF" V 8762 3750 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 8900 3750 50  0001 C CNN
-F 3 "~" H 8900 3750 50  0001 C CNN
-	1    8900 3750
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C_Small C5
 U 1 1 5FCC7FAE
 P 8900 4000
@@ -985,11 +974,6 @@ F 3 "" H 8800 4400 50  0001 C CNN
 	1    8800 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8800 3500 8800 3750
-Connection ~ 8800 3750
-Wire Wire Line
-	8800 3750 8800 4000
 Connection ~ 8800 4000
 Wire Wire Line
 	8800 4000 8800 4250
@@ -998,8 +982,6 @@ Wire Wire Line
 	8800 4250 8800 4400
 Wire Wire Line
 	9000 3500 9150 3500
-Wire Wire Line
-	9000 3750 9150 3750
 Wire Wire Line
 	9000 4000 9150 4000
 Wire Wire Line
@@ -1453,4 +1435,11 @@ $EndComp
 Connection ~ 7900 1550
 Wire Wire Line
 	7900 1550 7950 1550
+Wire Wire Line
+	8800 3500 8800 3750
+Wire Wire Line
+	9150 3750 8800 3750
+Connection ~ 8800 3750
+Wire Wire Line
+	8800 3750 8800 4000
 $EndSCHEMATC
