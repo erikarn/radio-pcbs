@@ -586,10 +586,8 @@ F 3 "~" H 5650 1600 50  0001 C CNN
 $EndComp
 Text GLabel 6100 1500 2    50   Input ~ 0
 TXB
-Text GLabel 6100 1600 2    50   Input ~ 0
+Text GLabel 6100 1700 2    50   Input ~ 0
 RXB
-Text GLabel 6100 1800 2    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 60535FDC
@@ -605,8 +603,6 @@ Wire Wire Line
 	5850 1500 6100 1500
 Wire Wire Line
 	6100 1600 5850 1600
-Wire Wire Line
-	6100 1800 5850 1800
 Text GLabel 5600 2400 0    50   Input ~ 0
 RX_IN
 Text GLabel 5600 2750 0    50   Input ~ 0
@@ -857,4 +853,30 @@ F 3 "~" H 2350 3050 50  0001 C CNN
 	1    2350 3050
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	6100 1700 5850 1700
+$Comp
+L power:GND #PWR?
+U 1 1 6063BAAB
+P 6100 1600
+F 0 "#PWR?" H 6100 1350 50  0001 C CNN
+F 1 "GND" V 6105 1472 50  0000 R CNN
+F 2 "" H 6100 1600 50  0001 C CNN
+F 3 "" H 6100 1600 50  0001 C CNN
+	1    6100 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6063E5FC
+P 6100 1800
+F 0 "#PWR?" H 6100 1550 50  0001 C CNN
+F 1 "GND" V 6105 1672 50  0000 R CNN
+F 2 "" H 6100 1800 50  0001 C CNN
+F 3 "" H 6100 1800 50  0001 C CNN
+	1    6100 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 1800 6100 1800
 $EndSCHEMATC
