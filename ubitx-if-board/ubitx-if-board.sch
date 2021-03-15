@@ -879,4 +879,70 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BFR92A_N.pdf" H 2900 1900 
 	1    2900 1900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 60528168
+P 1550 5400
+F 0 "H1" V 1504 5550 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1595 5550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom" H 1550 5400 50  0001 C CNN
+F 3 "~" H 1550 5400 50  0001 C CNN
+	1    1550 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6052991B
+P 1550 5700
+F 0 "H2" V 1504 5850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1595 5850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom" H 1550 5700 50  0001 C CNN
+F 3 "~" H 1550 5700 50  0001 C CNN
+	1    1550 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6052CA65
+P 1550 6050
+F 0 "H3" V 1504 6200 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1595 6200 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom" H 1550 6050 50  0001 C CNN
+F 3 "~" H 1550 6050 50  0001 C CNN
+	1    1550 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 60537FEC
+P 1450 5400
+F 0 "#PWR0113" H 1450 5150 50  0001 C CNN
+F 1 "GND" V 1455 5272 50  0000 R CNN
+F 2 "" H 1450 5400 50  0001 C CNN
+F 3 "" H 1450 5400 50  0001 C CNN
+	1    1450 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 60538857
+P 1450 5700
+F 0 "#PWR0114" H 1450 5450 50  0001 C CNN
+F 1 "GND" V 1455 5572 50  0000 R CNN
+F 2 "" H 1450 5700 50  0001 C CNN
+F 3 "" H 1450 5700 50  0001 C CNN
+	1    1450 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 6053B45F
+P 1450 6050
+F 0 "#PWR0115" H 1450 5800 50  0001 C CNN
+F 1 "GND" V 1455 5922 50  0000 R CNN
+F 2 "" H 1450 6050 50  0001 C CNN
+F 3 "" H 1450 6050 50  0001 C CNN
+	1    1450 6050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
