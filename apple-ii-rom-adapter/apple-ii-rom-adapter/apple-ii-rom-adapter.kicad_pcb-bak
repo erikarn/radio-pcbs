@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 5)
     (tracks 180)
     (zones 0)
     (modules 11)
@@ -847,6 +847,9 @@
     )
   )
 
+  (gr_text "28C256 to Apple-ii Rev0\nProto 0.1\nAdrian Chadd <adrian@freebsd.org>\n11/June/2021\n" (at 16.51 22.098 -90) (layer F.SilkS)
+    (effects (font (size 0.746 0.5174) (thickness 0.12935)))
+  )
   (gr_line (start 63.5 11.938) (end 63.5 55.88) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 11.938 11.938) (end 63.5 11.938) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 11.938 55.88) (end 11.938 11.938) (layer Edge.Cuts) (width 0.1))
