@@ -17,8 +17,8 @@ $Comp
 L Memory_EEPROM:28C256 U1
 U 1 1 60C42442
 P 2300 4400
-F 0 "U1" H 2300 5681 50  0000 C CNN
-F 1 "28C256" H 2300 5590 50  0000 C CNN
+F 0 "U1" H 2100 5650 50  0000 C CNN
+F 1 "28C256" H 2100 5550 50  0000 C CNN
 F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 2300 4400 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 2300 4400 50  0001 C CNN
 	1    2300 4400
@@ -60,7 +60,7 @@ $EndComp
 Text GLabel 4150 1500 0    50   Input ~ 0
 A7
 Text GLabel 4150 1600 0    50   Input ~ 0
-A8
+A6
 Text GLabel 4150 1700 0    50   Input ~ 0
 A5
 Text GLabel 4150 1800 0    50   Input ~ 0
@@ -175,24 +175,24 @@ N_OE
 $Comp
 L power:VCC #PWR0107
 U 1 1 60C7C441
-P 1550 5100
-F 0 "#PWR0107" H 1550 4950 50  0001 C CNN
-F 1 "VCC" V 1565 5227 50  0000 L CNN
-F 2 "" H 1550 5100 50  0001 C CNN
-F 3 "" H 1550 5100 50  0001 C CNN
-	1    1550 5100
-	0    -1   -1   0   
+P 5850 5450
+F 0 "#PWR0107" H 5850 5300 50  0001 C CNN
+F 1 "VCC" V 5865 5577 50  0000 L CNN
+F 2 "" H 5850 5450 50  0001 C CNN
+F 3 "" H 5850 5450 50  0001 C CNN
+	1    5850 5450
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R1
 U 1 1 60C7D20E
-P 1650 5100
-F 0 "R1" V 1445 5100 50  0000 C CNN
-F 1 "1k" V 1536 5100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 1650 5100 50  0001 C CNN
-F 3 "~" H 1650 5100 50  0001 C CNN
-	1    1650 5100
-	0    1    1    0   
+P 5850 5550
+F 0 "R1" V 5645 5550 50  0000 C CNN
+F 1 "1k" V 5736 5550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5850 5550 50  0001 C CNN
+F 3 "~" H 5850 5550 50  0001 C CNN
+	1    5850 5550
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1900 5100 1750 5100
@@ -233,17 +233,6 @@ Text GLabel 1900 4900 0    50   Input ~ 0
 A14
 Text GLabel 4050 5350 2    50   Input ~ 0
 A14
-$Comp
-L Device:R_Small_US R2
-U 1 1 60C8AF44
-P 4150 5250
-F 0 "R2" V 3945 5250 50  0000 C CNN
-F 1 "1K" V 4036 5250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" H 4150 5250 50  0001 C CNN
-F 3 "~" H 4150 5250 50  0001 C CNN
-	1    4150 5250
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 60C8C8D9
@@ -288,104 +277,33 @@ A12
 Text GLabel 1900 4800 0    50   Input ~ 0
 A13
 $Comp
-L 74xx:74LS138 U3
-U 1 1 60CBA99F
-P 6900 1800
-F 0 "U3" H 6900 2581 50  0000 C CNN
-F 1 "74LS138" H 6900 2490 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 6900 1800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 6900 1800 50  0001 C CNN
-	1    6900 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U2
-U 1 1 60CBB4C3
-P 7000 3500
-F 0 "U2" H 7000 3825 50  0000 C CNN
-F 1 "74LS00" H 7000 3734 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 7000 3500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 7000 3500 50  0001 C CNN
-	1    7000 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U2
-U 2 1 60CC6595
-P 7000 4050
-F 0 "U2" H 7000 4375 50  0000 C CNN
-F 1 "74LS00" H 7000 4284 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 7000 4050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 7000 4050 50  0001 C CNN
-	2    7000 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U2
-U 3 1 60CC7A86
-P 7800 3800
-F 0 "U2" H 7800 4125 50  0000 C CNN
-F 1 "74LS00" H 7800 4034 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 7800 3800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 7800 3800 50  0001 C CNN
-	3    7800 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U2
-U 4 1 60CC93C3
-P 7000 4800
-F 0 "U2" H 7000 5125 50  0000 C CNN
-F 1 "74LS00" H 7000 5034 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 7000 4800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 7000 4800 50  0001 C CNN
-	4    7000 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U2
-U 5 1 60CCAC66
-P 9000 3750
-F 0 "U2" H 9230 3796 50  0000 L CNN
-F 1 "74LS00" H 9230 3705 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9000 3750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 9000 3750 50  0001 C CNN
-	5    9000 3750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0109
 U 1 1 60CCD06C
-P 9000 4250
-F 0 "#PWR0109" H 9000 4000 50  0001 C CNN
-F 1 "GND" H 9005 4077 50  0000 C CNN
-F 2 "" H 9000 4250 50  0001 C CNN
-F 3 "" H 9000 4250 50  0001 C CNN
-	1    9000 4250
+P 9000 2850
+F 0 "#PWR0109" H 9000 2600 50  0001 C CNN
+F 1 "GND" H 9005 2677 50  0000 C CNN
+F 2 "" H 9000 2850 50  0001 C CNN
+F 3 "" H 9000 2850 50  0001 C CNN
+	1    9000 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0110
 U 1 1 60CCDA01
-P 9000 3250
-F 0 "#PWR0110" H 9000 3100 50  0001 C CNN
-F 1 "VCC" H 9015 3423 50  0000 C CNN
-F 2 "" H 9000 3250 50  0001 C CNN
-F 3 "" H 9000 3250 50  0001 C CNN
-	1    9000 3250
+P 9000 1850
+F 0 "#PWR0110" H 9000 1700 50  0001 C CNN
+F 1 "VCC" H 9015 2023 50  0000 C CNN
+F 2 "" H 9000 1850 50  0001 C CNN
+F 3 "" H 9000 1850 50  0001 C CNN
+	1    9000 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6700 4700 6700 4800
-Text GLabel 6500 4800 0    50   Input ~ 0
+Text GLabel 5650 3350 0    50   Input ~ 0
 A_PD
-Text GLabel 7300 4800 2    50   Input ~ 0
+Text GLabel 6450 3450 2    50   Input ~ 0
 N_OE
 Wire Wire Line
-	6500 4800 6700 4800
-Connection ~ 6700 4800
-Wire Wire Line
-	6700 4800 6700 4900
+	5650 3350 5850 3350
 $Comp
 L power:GND #PWR0111
 U 1 1 60CD4B16
@@ -438,36 +356,8 @@ Text GLabel 7400 2000 2    50   Input ~ 0
 A_SEL_5
 Text GLabel 7400 2200 2    50   Input ~ 0
 A_SEL_7
-Wire Wire Line
-	6700 3400 6700 3500
-Wire Wire Line
-	6700 3950 6700 4050
-Wire Wire Line
-	7300 3500 7300 3700
-Wire Wire Line
-	7300 3700 7500 3700
-Wire Wire Line
-	7500 3900 7300 3900
-Wire Wire Line
-	7300 3900 7300 4050
 Text GLabel 1900 5300 0    50   Input ~ 0
 N_CS
-Text GLabel 8100 3800 2    50   Input ~ 0
-N_CS
-Text GLabel 6500 3500 0    50   Input ~ 0
-A_SEL_0
-Text GLabel 6500 4050 0    50   Input ~ 0
-A_SEL_1
-Wire Wire Line
-	6500 3500 6700 3500
-Connection ~ 6700 3500
-Wire Wire Line
-	6700 3500 6700 3600
-Wire Wire Line
-	6500 4050 6700 4050
-Connection ~ 6700 4050
-Wire Wire Line
-	6700 4050 6700 4150
 $Comp
 L Device:C_Small C1
 U 1 1 60D22817
@@ -488,17 +378,6 @@ F 1 "0.1uF" H 7092 5555 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7000 5600 50  0001 C CNN
 F 3 "~" H 7000 5600 50  0001 C CNN
 	1    7000 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 60D27A91
-P 7600 5600
-F 0 "C3" H 7692 5646 50  0000 L CNN
-F 1 "0.1uF" H 7692 5555 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7600 5600 50  0001 C CNN
-F 3 "~" H 7600 5600 50  0001 C CNN
-	1    7600 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -524,17 +403,6 @@ F 3 "" H 7000 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0115
-U 1 1 60D32097
-P 7600 5700
-F 0 "#PWR0115" H 7600 5450 50  0001 C CNN
-F 1 "GND" H 7605 5527 50  0000 C CNN
-F 2 "" H 7600 5700 50  0001 C CNN
-F 3 "" H 7600 5700 50  0001 C CNN
-	1    7600 5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR0116
 U 1 1 60D32EAF
 P 6350 5500
@@ -557,6 +425,163 @@ F 3 "" H 7000 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L 74xx:74LS20 U2
+U 1 1 60E4496D
+P 4650 3800
+F 0 "U2" H 4650 4175 50  0000 C CNN
+F 1 "74LS20" H 4650 4084 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4650 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 4650 3800 50  0001 C CNN
+	1    4650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS20 U2
+U 2 1 60E452D9
+P 4650 4550
+F 0 "U2" H 4650 4925 50  0000 C CNN
+F 1 "74LS20" H 4650 4834 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4650 4550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 4650 4550 50  0001 C CNN
+	2    4650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS20 U2
+U 3 1 60E47344
+P 9050 5100
+F 0 "U2" H 9280 5146 50  0000 L CNN
+F 1 "74LS20" H 9280 5055 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9050 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS20" H 9050 5100 50  0001 C CNN
+	3    9050 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U4
+U 1 1 60E4CC86
+P 6150 3450
+F 0 "U4" H 6150 3775 50  0000 C CNN
+F 1 "74LS02" H 6150 3684 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6150 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 6150 3450 50  0001 C CNN
+	1    6150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U4
+U 2 1 60E4E5BF
+P 5550 4150
+F 0 "U4" H 5550 4475 50  0000 C CNN
+F 1 "74LS02" H 5550 4384 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5550 4150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 5550 4150 50  0001 C CNN
+	2    5550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U4
+U 3 1 60E51D78
+P 8400 3500
+F 0 "U4" H 8400 3825 50  0000 C CNN
+F 1 "74LS02" H 8400 3734 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8400 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 8400 3500 50  0001 C CNN
+	3    8400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U4
+U 4 1 60E54A60
+P 8400 4000
+F 0 "U4" H 8400 4325 50  0000 C CNN
+F 1 "74LS02" H 8400 4234 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8400 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 8400 4000 50  0001 C CNN
+	4    8400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U4
+U 5 1 60E57835
+P 9000 2350
+F 0 "U4" H 9230 2396 50  0000 L CNN
+F 1 "74LS02" H 9230 2305 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9000 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 9000 2350 50  0001 C CNN
+	5    9000 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3350 5850 3550
+Connection ~ 5850 3350
+$Comp
+L power:VCC #PWR0119
+U 1 1 60EAF30E
+P 9050 4600
+F 0 "#PWR0119" H 9050 4450 50  0001 C CNN
+F 1 "VCC" H 9065 4773 50  0000 C CNN
+F 2 "" H 9050 4600 50  0001 C CNN
+F 3 "" H 9050 4600 50  0001 C CNN
+	1    9050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 60EB183B
+P 9050 5600
+F 0 "#PWR0120" H 9050 5350 50  0001 C CNN
+F 1 "GND" H 9055 5427 50  0000 C CNN
+F 2 "" H 9050 5600 50  0001 C CNN
+F 3 "" H 9050 5600 50  0001 C CNN
+	1    9050 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5850 5650 3    50   Input ~ 0
+SOFT_5
+Text GLabel 4050 5250 2    50   Input ~ 0
+SOFT_5
+Text GLabel 1750 5100 0    50   Input ~ 0
+SOFT_5
+Text GLabel 4350 3650 0    50   Input ~ 0
+SOFT_5
+Text GLabel 4350 3750 0    50   Input ~ 0
+SOFT_5
+Text GLabel 8100 3400 0    50   Input ~ 0
+SOFT_5
+Text GLabel 8100 3600 0    50   Input ~ 0
+SOFT_5
+Text GLabel 8100 3900 0    50   Input ~ 0
+SOFT_5
+Text GLabel 8100 4100 0    50   Input ~ 0
+SOFT_5
+Text GLabel 5850 4150 2    50   Input ~ 0
+N_CS
+Wire Wire Line
+	4950 3800 5050 3800
+Wire Wire Line
+	5050 3800 5050 4050
+Wire Wire Line
+	5050 4050 5250 4050
+Wire Wire Line
+	5250 4250 5050 4250
+Wire Wire Line
+	5050 4250 5050 4550
+Wire Wire Line
+	5050 4550 4950 4550
+Text GLabel 4350 3850 0    50   Input ~ 0
+A_SEL_2
+Text GLabel 4350 3950 0    50   Input ~ 0
+A_SEL_3
+Text GLabel 4350 4400 0    50   Input ~ 0
+A_SEL_4
+Text GLabel 4350 4500 0    50   Input ~ 0
+A_SEL_5
+Text GLabel 4350 4600 0    50   Input ~ 0
+A_SEL_6
+Text GLabel 4350 4700 0    50   Input ~ 0
+A_SEL_7
+$Comp
 L power:VCC #PWR0118
 U 1 1 60D346E6
 P 7600 5500
@@ -568,14 +593,69 @@ F 3 "" H 7600 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
-U 1 1 60C6FC7E
-P 4250 5250
-F 0 "#PWR?" H 4250 5100 50  0001 C CNN
-F 1 "VCC" H 4265 5423 50  0000 C CNN
-F 2 "" H 4250 5250 50  0001 C CNN
-F 3 "" H 4250 5250 50  0001 C CNN
-	1    4250 5250
+L power:GND #PWR0115
+U 1 1 60D32097
+P 7600 5700
+F 0 "#PWR0115" H 7600 5450 50  0001 C CNN
+F 1 "GND" H 7605 5527 50  0000 C CNN
+F 2 "" H 7600 5700 50  0001 C CNN
+F 3 "" H 7600 5700 50  0001 C CNN
+	1    7600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 60D27A91
+P 7600 5600
+F 0 "C3" H 7692 5646 50  0000 L CNN
+F 1 "0.1uF" H 7692 5555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7600 5600 50  0001 C CNN
+F 3 "~" H 7600 5600 50  0001 C CNN
+	1    7600 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0121
+U 1 1 60FCB6E6
+P 8150 5500
+F 0 "#PWR0121" H 8150 5350 50  0001 C CNN
+F 1 "VCC" H 8165 5673 50  0000 C CNN
+F 2 "" H 8150 5500 50  0001 C CNN
+F 3 "" H 8150 5500 50  0001 C CNN
+	1    8150 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 60FCB6EC
+P 8150 5700
+F 0 "#PWR0122" H 8150 5450 50  0001 C CNN
+F 1 "GND" H 8155 5527 50  0000 C CNN
+F 2 "" H 8150 5700 50  0001 C CNN
+F 3 "" H 8150 5700 50  0001 C CNN
+	1    8150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 60FCB6F2
+P 8150 5600
+F 0 "C4" H 8242 5646 50  0000 L CNN
+F 1 "0.1uF" H 8242 5555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 8150 5600 50  0001 C CNN
+F 3 "~" H 8150 5600 50  0001 C CNN
+	1    8150 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS138 U3
+U 1 1 60CBA99F
+P 6900 1800
+F 0 "U3" H 7150 2450 50  0000 C CNN
+F 1 "74LS138" H 7150 2350 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 6900 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 6900 1800 50  0001 C CNN
+	1    6900 1800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
