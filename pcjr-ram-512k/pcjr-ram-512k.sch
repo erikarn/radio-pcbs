@@ -1,0 +1,126 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_RAM:AS6C4008-55PCN U?
+U 1 1 60B6A09D
+P 7650 2300
+F 0 "U?" H 7650 3581 50  0000 C CNN
+F 1 "AS6C4008-55PCN" H 7650 3490 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm" H 7650 2400 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 7650 2400 50  0001 C CNN
+	1    7650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U?
+U 1 1 60B6BC7A
+P 5650 4200
+F 0 "U?" H 5650 4525 50  0000 C CNN
+F 1 "74LS32" H 5650 4434 50  0000 C CNN
+F 2 "" H 5650 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5650 4200 50  0001 C CNN
+	1    5650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 1 1 60B6C85D
+P 6850 4300
+F 0 "U?" H 6850 4625 50  0000 C CNN
+F 1 "74LS86" H 6850 4534 50  0000 C CNN
+F 2 "" H 6850 4300 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 6850 4300 50  0001 C CNN
+	1    6850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U?
+U 1 1 60B6DAB5
+P 7900 4300
+F 0 "U?" H 7900 4617 50  0000 C CNN
+F 1 "74LS04" H 7900 4526 50  0000 C CNN
+F 2 "" H 7900 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7900 4300 50  0001 C CNN
+	1    7900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x30_Row_Letter_First J?
+U 1 1 60B6F761
+P 1900 2500
+F 0 "J?" H 1950 4117 50  0000 C CNN
+F 1 "Conn_02x30_Row_Letter_First" H 1950 4026 50  0000 C CNN
+F 2 "" H 1900 2500 50  0001 C CNN
+F 3 "~" H 1900 2500 50  0001 C CNN
+	1    1900 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B81365
+P 2900 5150
+F 0 "C?" H 2992 5196 50  0000 L CNN
+F 1 "C_Small" H 2992 5105 50  0000 L CNN
+F 2 "" H 2900 5150 50  0001 C CNN
+F 3 "~" H 2900 5150 50  0001 C CNN
+	1    2900 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B81BF3
+P 3550 5150
+F 0 "C?" H 3642 5196 50  0000 L CNN
+F 1 "C_Small" H 3642 5105 50  0000 L CNN
+F 2 "" H 3550 5150 50  0001 C CNN
+F 3 "~" H 3550 5150 50  0001 C CNN
+	1    3550 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B825CF
+P 4100 5150
+F 0 "C?" H 4192 5196 50  0000 L CNN
+F 1 "C_Small" H 4192 5105 50  0000 L CNN
+F 2 "" H 4100 5150 50  0001 C CNN
+F 3 "~" H 4100 5150 50  0001 C CNN
+	1    4100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60B833A9
+P 4700 5150
+F 0 "C?" H 4792 5196 50  0000 L CNN
+F 1 "C_Small" H 4792 5105 50  0000 L CNN
+F 2 "" H 4700 5150 50  0001 C CNN
+F 3 "~" H 4700 5150 50  0001 C CNN
+	1    4700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 60B84074
+P 5800 5150
+F 0 "C?" H 5891 5196 50  0000 L CNN
+F 1 "CP1_Small" H 5891 5105 50  0000 L CNN
+F 2 "" H 5800 5150 50  0001 C CNN
+F 3 "~" H 5800 5150 50  0001 C CNN
+	1    5800 5150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
