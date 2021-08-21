@@ -181,4 +181,49 @@ Text GLabel 4600 5000 2    50   Input ~ 0
 BUS_D6
 Text GLabel 3000 5000 2    50   Input ~ 0
 BUS_D7
+Text GLabel 4400 1550 2    50   Input ~ 0
+CPU_D0
+Text GLabel 4400 1650 2    50   Input ~ 0
+CPU_D1
+Text GLabel 4400 1750 2    50   Input ~ 0
+CPU_D2
+Text GLabel 4400 1850 2    50   Input ~ 0
+CPU_D3
+Text GLabel 4400 1950 2    50   Input ~ 0
+CPU_D4
+Text GLabel 4400 2050 2    50   Input ~ 0
+CPU_D5
+Text GLabel 4400 2150 2    50   Input ~ 0
+CPU_D6
+Text GLabel 4400 2250 2    50   Input ~ 0
+CPU_D7
+Text GLabel 3400 1550 0    50   Input ~ 0
+BUS_D0
+Text GLabel 3400 1650 0    50   Input ~ 0
+BUS_D1
+Text GLabel 3400 1750 0    50   Input ~ 0
+BUS_D2
+Text GLabel 3400 1850 0    50   Input ~ 0
+BUS_D3
+Text GLabel 3400 1950 0    50   Input ~ 0
+BUS_D4
+Text GLabel 3400 2050 0    50   Input ~ 0
+BUS_D5
+Text GLabel 3400 2150 0    50   Input ~ 0
+BUS_D6
+Text GLabel 3400 2250 0    50   Input ~ 0
+BUS_D7
+Text GLabel 3400 2450 0    50   Input ~ 0
+CPU_DIR
+$Comp
+L power:GND #PWR?
+U 1 1 60C9B21D
+P 3400 2550
+F 0 "#PWR?" H 3400 2300 50  0001 C CNN
+F 1 "GND" H 3405 2377 50  0000 C CNN
+F 2 "" H 3400 2550 50  0001 C CNN
+F 3 "" H 3400 2550 50  0001 C CNN
+	1    3400 2550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
