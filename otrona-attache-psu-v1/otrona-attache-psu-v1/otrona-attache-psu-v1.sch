@@ -150,7 +150,7 @@ DISPLAY_VSYNC
 Text GLabel 9800 1500 0    50   Input ~ 0
 DISPLAY_VIDEO
 Text GLabel 9800 1600 0    50   Input ~ 0
-VIDEO_HSYNC
+DISPLAY_HSYNC
 $Comp
 L power:GND #PWR0104
 U 1 1 61D30967
@@ -550,4 +550,19 @@ F 3 "" H 9700 5750 50  0001 C CNN
 	1    9700 5750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x02_Male J8
+U 1 1 62824E1A
+P 8800 5700
+F 0 "J8" H 8772 5674 50  0000 R CNN
+F 1 "AUDIO" H 8772 5583 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 8800 5700 50  0001 C CNN
+F 3 "~" H 8800 5700 50  0001 C CNN
+	1    8800 5700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 8600 5800 0    50   Input ~ 0
+SPK_AUDIO
+Text GLabel 8600 5700 0    50   Input ~ 0
+SPK_GND
 $EndSCHEMATC
