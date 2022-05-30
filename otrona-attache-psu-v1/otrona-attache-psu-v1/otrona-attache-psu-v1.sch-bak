@@ -118,7 +118,7 @@ U 1 1 61D2797F
 P 10000 1400
 F 0 "J1" H 9972 1424 50  0000 R CNN
 F 1 "VIDEO" H 9972 1333 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_5-G-5,08_1x05_P5.08mm_Vertical" H 10000 1400 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0005_1x05_P3.96mm_Vertical" H 10000 1400 50  0001 C CNN
 F 3 "~" H 10000 1400 50  0001 C CNN
 	1    10000 1400
 	-1   0    0    -1  
@@ -129,7 +129,7 @@ U 1 1 61D2A493
 P 10000 2350
 F 0 "J2" H 9972 2324 50  0000 R CNN
 F 1 "CPU" H 9972 2233 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_12-G-5,08_1x12_P5.08mm_Vertical" H 10000 2350 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0012_1x12_P3.96mm_Vertical" H 10000 2350 50  0001 C CNN
 F 3 "~" H 10000 2350 50  0001 C CNN
 	1    10000 2350
 	-1   0    0    -1  
@@ -140,7 +140,7 @@ U 1 1 61D2C5E5
 P 10000 3500
 F 0 "J3" H 9972 3474 50  0000 R CNN
 F 1 "DRIVES" H 9972 3383 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_8-G-5,08_1x08_P5.08mm_Vertical" H 10000 3500 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0008_1x08_P3.96mm_Vertical" H 10000 3500 50  0001 C CNN
 F 3 "~" H 10000 3500 50  0001 C CNN
 	1    10000 3500
 	-1   0    0    -1  
@@ -561,8 +561,52 @@ F 3 "~" H 8800 5700 50  0001 C CNN
 	1    8800 5700
 	-1   0    0    -1  
 $EndComp
-Text GLabel 8600 5700 0    50   Input ~ 0
-SPK_AUDIO
 Text GLabel 8600 5800 0    50   Input ~ 0
+SPK_AUDIO
+Text GLabel 8600 5700 0    50   Input ~ 0
 SPK_GND
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 62A852AD
+P 1550 4900
+F 0 "H1" H 1650 4949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1650 4858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5" H 1550 4900 50  0001 C CNN
+F 3 "~" H 1550 4900 50  0001 C CNN
+	1    1550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 62A86485
+P 1550 5000
+F 0 "#PWR0127" H 1550 4750 50  0001 C CNN
+F 1 "GND" H 1555 4827 50  0000 C CNN
+F 2 "" H 1550 5000 50  0001 C CNN
+F 3 "" H 1550 5000 50  0001 C CNN
+	1    1550 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 62A86803
+P 2550 4900
+F 0 "H2" H 2650 4949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2650 4858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5" H 2550 4900 50  0001 C CNN
+F 3 "~" H 2550 4900 50  0001 C CNN
+	1    2550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 62A86809
+P 2550 5000
+F 0 "#PWR0128" H 2550 4750 50  0001 C CNN
+F 1 "GND" H 2555 4827 50  0000 C CNN
+F 2 "" H 2550 5000 50  0001 C CNN
+F 3 "" H 2550 5000 50  0001 C CNN
+	1    2550 5000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
