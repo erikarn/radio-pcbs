@@ -355,7 +355,7 @@ U 1 1 61D8718A
 P 3700 1550
 F 0 "J5" H 3700 2217 50  0000 C CNN
 F 1 "ATX-24" H 3700 2126 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-24A2_2x12_P4.20mm_Vertical" H 3700 1450 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-24A2_2x12_P4.20mm_Horizontal" H 3700 1450 50  0001 C CNN
 F 3 "https://www.intel.com/content/dam/www/public/us/en/documents/guides/power-supply-design-guide-june.pdf#page=33" H 6100 1000 50  0001 C CNN
 	1    3700 1550
 	1    0    0    -1  
@@ -571,7 +571,7 @@ U 1 1 62A852AD
 P 1550 4900
 F 0 "H1" H 1650 4949 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1650 4858 50  0000 L CNN
-F 2 "MountingHole:MountingHole_5.3mm_M5" H 1550 4900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 1550 4900 50  0001 C CNN
 F 3 "~" H 1550 4900 50  0001 C CNN
 	1    1550 4900
 	1    0    0    -1  
@@ -593,7 +593,7 @@ U 1 1 62A86803
 P 2550 4900
 F 0 "H2" H 2650 4949 50  0000 L CNN
 F 1 "MountingHole_Pad" H 2650 4858 50  0000 L CNN
-F 2 "MountingHole:MountingHole_5.3mm_M5" H 2550 4900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.5mm" H 2550 4900 50  0001 C CNN
 F 3 "~" H 2550 4900 50  0001 C CNN
 	1    2550 4900
 	1    0    0    -1  
