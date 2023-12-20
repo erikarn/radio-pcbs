@@ -11,8 +11,8 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -2397,7 +2397,7 @@
   (gr_text "Adrian Chadd" (at 26.93156 88.81632) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "v0.3, March 2023" (at 27.23636 85.77594) (layer F.SilkS)
+  (gr_text "v0.4, December 2023" (at 27.23636 85.77594) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "Otrona Attache PSU" (at 27.43702 82.73556) (layer F.SilkS)
