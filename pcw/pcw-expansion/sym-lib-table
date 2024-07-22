@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Zilog_Z80_Peripherals")(type "KiCad")(uri "/Users/adrian/git/github/erikarn/radio-pcbs/components/zilog/Zilog_Z80_Peripherals.kicad_sym")(options "")(descr ""))
+)
