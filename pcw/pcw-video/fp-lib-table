@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "RCJ")(type "KiCad")(uri "/Users/adrian/git/github/erikarn/radio-pcbs/components/rca")(options "")(descr ""))
+)
